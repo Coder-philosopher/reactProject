@@ -62,29 +62,148 @@ export default function Header() {
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
                 <NavLink
-                  to="/"
+                  to="/contact"
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100
-                      ${isActive ? "text-orange-700" : "text-gray-700"}
-                      hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
-                  Home
+                  Contact-Us
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/about"
+                  to="/github"
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100
-                      ${isActive ? "text-orange-700" : "text-gray-700"}
-                      hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
-                  About Us
+                  Github
                 </NavLink>
               </li>
-              {/* Add more NavLink items here as needed */}
+              <li>
+                <NavLink
+                  to="/card"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Card
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/todo"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Todo
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/password"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Password
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/nationality"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Nationality
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/login"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Login
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/gallery"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Gallery
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/crypto"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Crypto
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/counter"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Counter
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/autobg"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Auto-Bg
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/btnbg"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Btn-Bg
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>
