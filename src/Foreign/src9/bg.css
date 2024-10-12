@@ -1,0 +1,43 @@
+#but {
+  height: 50px;
+  width: 90px;
+  background-color: cornflowerblue;
+  color: rgb(210, 30, 132);
+  border-radius: 10px;
+  font-size: large;
+  border: 2px solid black;
+  cursor: pointer;
+  font-weight: 700;
+
+  transition: all 0.1s ease;
+}
+#but:hover {
+  /* background-color: rgb(210, 30, 132);
+    color: cornflowerblue; */
+  background: linear-gradient(
+    45deg,
+    rgb(51, 177, 191),
+    rgb(90, 30, 210),
+    rgb(210, 30, 132),
+    rgb(210, 30, 30)
+  );
+  color: black;
+}
+.text {
+  height: 70px;
+  width: auto;
+  background: linear-gradient(
+    45deg,
+    rgb(51, 177, 191),
+    rgb(90, 30, 210),
+    rgb(210, 30, 132),
+    rgb(210, 30, 30)
+  );
+  color: black;
+  border-radius: 10px;
+  font-size: 40px;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+}

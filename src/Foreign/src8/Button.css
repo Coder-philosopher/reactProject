@@ -1,0 +1,41 @@
+.CounterButton {
+  background-color: cornflowerblue;
+  color: black;
+
+  border-radius: 100px;
+  font-size: 20px;
+  padding: 5px;
+
+  border: 2px solid #212121;
+  transition: all 0.1s ease;
+  margin: 15px;
+}
+.CounterButton:hover {
+  cursor: pointer;
+  border: 2px solid #989898;
+  color: aqua;
+  background: linear-gradient(
+    45deg,
+    rgb(51, 177, 191),
+    rgb(90, 30, 210),
+    rgb(210, 30, 132),
+    rgb(210, 30, 30)
+  );
+}
+.text {
+  /* display: none; */
+  height: 50px;
+  width: auto;
+  background: linear-gradient(
+    45deg,
+    rgb(51, 177, 191),
+    rgb(90, 30, 210),
+    rgb(210, 30, 132),
+    rgb(210, 30, 30)
+  );
+  color: black;
+  border-radius: 10px;
+  font-size: 40px;
+  border: 2px solid #989898;
+  text-align: center;
+}
