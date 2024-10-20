@@ -1,10 +1,11 @@
 import "./App.css";
 import Color from "./Color.jsx";
 document.body.style.backgroundColor = "#212121";
+
 function App10() {
   return (
     <>
-      <div className="h-14 w-[98%] bg-[#5F33CC] fixed bottom-10 left-[50%] -translate-x-[50%] rounded-full flex justify-center items-center">
+      <div className="w-[98%] bg-[#5F33CC] fixed bottom-10 left-[50%] -translate-x-[50%] rounded-full flex flex-col sm:flex-row justify-center items-center sm:h-14 h-auto py-2">
         <Color Name="Violet" Hexcode="#EE82EE" />
         <Color Name="Indigo" Hexcode="#4B0082" />
         <Color Name="Blue" Hexcode="#0000FF" />
