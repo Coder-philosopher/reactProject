@@ -69,7 +69,7 @@ export default function Header() {
               {[
                 "contact",
                 "github",
-                "card",
+                // "card",
                 "todo",
                 "password",
                 "nationality",
