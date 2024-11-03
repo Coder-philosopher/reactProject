@@ -11,15 +11,19 @@ function Github() {
       <img src={data.avatar_url} alt="GitHub Avatar" width={200} className="mx-auto my-4 rounded-full" />
 
       <h3 className="text-2xl mt-4">Repositories:</h3>
-      <ul className="list-disc list-inside mt-4 space-y-2 text-lg">
-        {data.repos.map((repo) => (
-          <li key={repo.id}>
-            <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-              {repo.name}
-            </a>
-          </li>
-        ))}
-      </ul>
+      {Array.isArray(data.repos) && data.repos.length > 0 ? (
+        <ul className="list-disc list-inside mt-4 space-y-2 text-lg">
+          {data.repos.map((repo) => (
+            <li key={repo.id}>
+              <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                {repo.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p>No repositories found.</p>
+      )}
     </div>
   );
 }
@@ -31,8 +35,9 @@ export const githubInfoLoader = async () => {
   const userResponse = await fetch("https://api.github.com/users/Coder-philosopher");
   const userData = await userResponse.json();
 
-  const reposResponse = await fetch("https://api.github.com/users/Coder-philosopher/ReactProjects");
+  // Fetch repositories
+  const reposResponse = await fetch("https://api.github.com/users/Coder-philosopher/repos");
   const reposData = await reposResponse.json();
 
-  return { ...userData, repos: reposData };
+  return { ...userData, repos: Array.isArray(reposData) ? reposData : [] };
 };
