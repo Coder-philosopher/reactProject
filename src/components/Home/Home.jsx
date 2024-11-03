@@ -9,14 +9,14 @@ export default function Home() {
                     <div className="space-y-6 max-w-lg mx-auto lg:ml-auto lg:mr-0 lg:text-right">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
                             Download Now
-                            <span className="block sm:inline text-indigo-600"> Lorem Ipsum</span>
+                            <span className="block sm:inline text-orange-700"> Lorem Ipsum</span>
                         </h2>
                         <p className="mt-4 text-gray-600 max-w-md mx-auto lg:mx-0">
                             Discover the ultimate experience. Download now to enjoy exclusive features.
                         </p>
                         <Link
                             to="/"
-                            className="inline-flex items-center px-8 py-3 text-white bg-indigo-600 rounded-full hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                            className="inline-flex items-center px-8 py-3 text-white bg-orange-700 rounded-full hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                         >
                             <svg
                                 fill="currentColor"
